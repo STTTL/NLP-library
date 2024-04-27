@@ -236,15 +236,15 @@ if __name__ == "__main__":
     analyzer = TextAnalyzer()
 
     # Load texts
-    analyzer.load_text("/Users/yihanluo/Downloads/pg3176.txt", label="The Innocents Abroad")
-    analyzer.load_text("/Users/yihanluo/Downloads/pg76.txt", label="Adventures of Huckleberry Finn")
-    analyzer.load_text("/Users/yihanluo/Downloads/A Connecticut Yankee in King Arthur’s Court.txt", label="A Connecticut Yankee")
-    analyzer.load_text("/Users/yihanluo/Downloads/The £1,000,000 bank-note.txt", label="£1,000,000")
-    analyzer.load_text("/Users/yihanluo/Downloads/The-Tragedy-of-Pudd-nhead-Wilson-by-Mark.txt", label="The Tragedy")
+    analyzer.load_text("pg3176.txt", label="The Innocents Abroad")
+    analyzer.load_text("pg76.txt", label="Adventures of Huckleberry Finn")
+    analyzer.load_text("A Connecticut Yankee in King Arthur’s Court.txt", label="A Connecticut Yankee")
+    analyzer.load_text("The £1,000,000 bank-note.txt", label="£1,000,000")
+    analyzer.load_text("The-Tragedy-of-Pudd-nhead-Wilson-by-Mark.txt", label="The Tragedy")
     # ... load more texts as needed ...
 
     # Remove stop words
-    analyzer.load_stop_words("/Users/yihanluo/Downloads/NLTK's list of english stopwords.txt")
+    analyzer.load_stop_words("NLTK's list of english stopwords.txt")
 
     # Visualize a Word Count Sankey Diagram for the most common words
     analyzer.wordcount_sankey()
